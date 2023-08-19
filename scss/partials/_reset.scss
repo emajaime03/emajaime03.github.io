@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: $fuentePrincial;
+    font-weight: 300;
+
+    main hr {
+        border-top: dashed;
+        border-top-width: 3px;
+        border-top-color: $colortexto;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(195, 189, 189);
+    }
+}
+
+
+
+
+

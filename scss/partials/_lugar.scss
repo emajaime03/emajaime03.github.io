@@ -1,0 +1,56 @@
+.sucursal {
+    padding-block: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    .texto-ubicacion {
+        background-color: black;
+        padding-inline: 100px;
+        padding-top: 20px;
+        color: $colortexto;
+        text-align: center;
+        
+
+        h2 {
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 50px;
+        }
+
+        .icon-lugar {
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            align-items: baseline;
+            
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    iframe {
+        height: 580px;
+        width: 100%;
+    }
+}
+
+@media (width <= 1350px)
+{
+    .sucursal {
+        .texto-ubicacion {
+            padding-inline: 50px;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            .icon-lugar{
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

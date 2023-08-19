@@ -1,0 +1,95 @@
+.navnegra {
+    background-color: black !important;
+    z-index: 2;
+
+    a:hover {
+        color: $colorhover !important; 
+        transition: 0.3s;
+    }
+    
+
+    img{
+        max-width: 90px;
+        padding-block: 5px;
+    }
+
+    .container-fluid {
+        padding-right: 30px;
+        @media (width <= 991px) {
+            padding-inline: 5px;
+        }
+        .cambiarcolornavbar {
+            background-image: none;
+
+            .icono {
+                font-size: 35px;
+                color: white;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: end;
+            
+        .nav-link {
+            color: $colortexto;
+            position: relative;
+            padding: 0;
+            margin-inline: 15px;
+            
+            &::after {
+                content:'';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 230%;
+                background-color: rgb(255, 255, 255);
+                transition: .1s;
+                height: 2px;
+                transform: scaleX(0);
+                transform-origin: center;
+            }
+            
+            &:hover::after {
+                transform: scaleX(1);
+            }
+            &:hover {
+                color: white !important;
+            }
+        }
+        .ahora {
+            color: rgba(255, 255, 255, 0.563) !important;
+
+            &::after {
+                content:'';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 230%;
+                background-color: rgba(255, 255, 255, 0.563);
+                height: 2px;
+                transform: scaleX(1);
+                transform-origin: center;
+            }
+        }
+    }
+}
+
+@media (width <= 991px) {
+    .navnegra {
+        .navbar-collapse {
+            .nav-item {
+                align-self: center;
+            
+                .nav-link {
+                    padding: 8px;
+                    margin-inline: 0px;
+
+                    &::after {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
