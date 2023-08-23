@@ -125,7 +125,7 @@ body a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  text-shadow: 0px 0px 7px rgb(0, 0, 0);
 }
 .titulos h1 {
   font-family: "aliens and cows", sans-serif;
